@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>payment-service</artifactId>
+        <groupId>com.ordering.system</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>payment-messaging</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ordering.system</groupId>
+            <artifactId>payment-application-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ordering.system</groupId>
+            <artifactId>message-producer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ordering.system</groupId>
+            <artifactId>message-consumer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ordering.system</groupId>
+            <artifactId>message-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
